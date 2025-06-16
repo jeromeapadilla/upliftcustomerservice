@@ -3,9 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elite Customer Support Solutions</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>okay</h1>
+    <header class="sticky">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Elite Customer Support Solutions Logo" class="logo">
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#services" class="nav-link active">Services</a></li>
+                        <li><a href="#plans" class="nav-link">Plans</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#contact" class="nav-link">Contact <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#contact-form">Contact Form</a></li>
+                                <li><a href="#phone">Phone</a></li>
+                                <li><a href="#email">Email</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="nav-cta">
+                        <a href="#contact" class="btn btn-small">Get a Quote</a>
+                    </div>
+                </nav>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="animate-pop-in">Exceptional Customer Service Solutions</h1>
+            <p class="animate-pop-in">Delivering premium support experiences that build loyalty and drive growth</p>
+            <a href="#plans" class="btn animate-pop-in">View Our Plans</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Comprehensive Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock assistance for your customers, whenever they need help.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-comments"></i>
+                <h3>Multichannel Support</h3>
+                <p>Email, chat, phone, and social media - we cover all communication channels.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Performance Analytics</h3>
+                <p>Detailed reports to help you understand and improve customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans">
+        <h2>Choose Your Perfect Plan</h2>
+        <div class="plan-container">
+            <div class="plan-card standard">
+                <div class="plan-header">
+                    <h3>Standard</h3>
+                    <div class="price">$5,000<span>/mo</span></div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 8 hrs Customer Support</li>
+                        <li><i class="fas fa-check"></i> Email & Chat Support</li>
+                        <li><i class="fas fa-check"></i> Basic Analytics Dashboard</li>
+                        <li><i class="fas fa-check"></i> Up to 500 Support Tickets/Month</li>
+                        <li><i class="fas fa-check"></i> Standard Response Time (4hrs)</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="plan-btn">Get Started</a>
+                <div class="popular-tag">Most Popular</div>
+            </div>
+
+            <div class="plan-card premium">
+                <div class="plan-header">
+                    <h3>Premium</h3>
+                    <div class="price">$7,500<span>/mo</span></div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> 12 hrs Customer Support</li>
+                        <li><i class="fas fa-check"></i> Multichannel Support (Email, Chat, Phone)</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics & Reporting</li>
+                        <li><i class="fas fa-check"></i> Unlimited Support Tickets</li>
+                        <li><i class="fas fa-check"></i> Priority Response Time (1hr)</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check"></i> Monthly Strategy Sessions</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="plan-btn">Get Premium</a>
+                <div class="premium-tag">Best For</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment">
+        <h2>Our Technology Stack</h2>
+        <div class="equipment-grid">
+            <div class="equipment-card">
+                <img src="./images-removebg-preview.png" alt="Zendesk Logo" class="equipment-logo">
+                <h3>Zendesk Suite</h3>
+                <p>Industry-leading customer service software for seamless support operations.</p>
+                <div class="features">
+                    <span>Ticket Management</span>
+                    <span>Knowledge Base</span>
+                    <span>Live Chat</span>
+                    <span>Analytics</span>
+                </div>
+            </div>
+            <div class="equipment-card">
+                <img src="crm-logo.png" alt="CRM Logo" class="equipment-logo">
+                <h3>CRM Integration</h3>
+                <p>Full integration with major CRM platforms for complete customer visibility.</p>
+            </div>
+            <div class="equipment-card">
+                <img src="ai-logo.png" alt="AI Logo" class="equipment-logo">
+                <h3>AI Support Tools</h3>
+                <p>Smart automation and chatbots to enhance efficiency and response times.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Ready to Elevate Your Customer Service?</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <select>
+                    <option value="" disabled selected>Interested Plan</option>
+                    <option value="standard">Standard ($4,000/mo)</option>
+                    <option value="premium">Premium ($6,000/mo)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Get a Free Consultation</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Elite Customer Support Solutions Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> support@elitecustomersolutions.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Elite Customer Support Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
